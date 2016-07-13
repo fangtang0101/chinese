@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">汉词美声</h1>
+		</header>
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/castapp.js"></script>
+
+		<script type="text/javascript">
+			ca.init()
+		</script>
+		
+		<button id="classBtn" style="position: fixed; top: 50px;left: 50px; width: 100px;height: 50px; z-index: 100;">点我添加</button>
+		<div class="voice_box_out">
+		<div class="voice_box_container">
+			<div class="voice_box_Templ voice_box_Left ">
+				<div class="voice_box_Left_top">
+					<span>作者：李绅</span>
+				</div>
+				<div class="voice_box_Left_bottom">
+					<span>作品：悯农</span>
+				</div>
+			</div>
+			<div class=" voice_box_Templ voice_box_Middle">
+				<span>专业题词：xx不知道是什么鬼懂啊粉丝大幅</span>
+			</div>
+			<div class="voice_box_Templ voice_box_Right">
+				<span>简介：这组诗深刻地反映了</span>
+			</div>
+			</div>
+			
+		</div>
+		
+			<script src="js/mui.min.js "></script>
+		<script src="js/castapp.js "></script>
+		<script type="text/javascript" src="js/my_tmpl.js" ></script>
+
+		<script type="text/javascript ">
+		
+		var btn = ca.id('classBtn');
+		var box = ca.className('voice_box_out');
+		btn.addEventListener('tap',function(){
+		
+		
+		alert(box['0']);
+		var tmpl = voice_tmpl.itemTmpl();
+		
+		box['0'].innerHTML += tmpl;
+		
+		
+		
+		});
+		
+		
+		</script>
+		
+		
+	 
+
+	</body>
+
+</html>

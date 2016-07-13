@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<nav class="mui-bar mui-bar-tab">
+
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">综合</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">原创</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">直达</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">更多</span>
+			</a>
+		</nav>
+
+		<div class="mui-content">
+			<!--综合里面的目录-->
+			<div id="tabbar" class="mui-control-content mui-active class-particulars">
+				<div class="class-particulars-someOne class-particulars-FIrst">
+					<span>
+				 	<p>心灵美句</p>
+				 </span>
+				</div>
+
+				<div class="class-particulars-someOne class-particulars-Second">
+					<span>
+				 	<p>国产好词</p>
+				 </span> </div>
+
+				<div class="class-particulars-someOne class-particulars-Thrid">
+					<span>
+				 	<p>外词汉韵</p>
+				 </span>
+				</div>
+				<div class="class-particulars-someOne class-particulars-Fourth">
+
+					<span>
+				 	<p>汉词美声</p>
+				 </span>
+				</div>
+
+			</div>
+			<!--原创内容-->
+			<div id="tabbar-with-chat" class="mui-control-content  class-particulars">
+				<div class="class-particulars-someOne class-particulars-FIrst">
+					<span>
+				 	<p>原创诗</p>
+				 </span>
+				</div>
+
+				<div class="class-particulars-someOne class-particulars-Second">
+					<span>
+				 	<p>原创句</p>
+				 </span> </div>
+
+				<div class="class-particulars-someOne class-particulars-Thrid">
+					<span>
+				 	<p>原创曲</p>
+				 </span>
+				</div>
+				<div class="class-particulars-someOne class-particulars-Fourth">
+					<span>
+				 	<p>原创赋</p>
+				 </span>
+				</div>
+
+			</div>
+			<!--直达内容-->
+			<div id="tabbar-with-contact" class="mui-control-content  class-particulars class_search">
+				<input type="search" name="search" id="search" value="请输入需要搜索的关键字" />
+			</div>
+			<!--更多内容-->
+			<div id="tabbar-with-map" class="mui-control-content  class-particulars class_More">
+
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							我的收藏
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							分享汉韵
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							去AppStore吐槽产品
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							设置
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							关于我们
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		</div>
+
+		<!--1、先引入castapp.js-->
+		<script src="js/castapp.js"></script>
+		<script src="js/mui.js"></script>
+		<script>
+			//2、初始化
+			ca.init();
+			var buttonTagP = ca.tagName('p');
+			var url;
+			var urlId;
+
+			buttonTagP['0'].addEventListener('tap', function() {
+				ca.newInterface({
+					url: 'heartsBeautifulWord.html',
+					id: 'heartsBeautifulWord'
+				});
+			});
+			buttonTagP['1'].addEventListener('tap', function() {
+				ca.newInterface({
+					url: 'niceChinaWord.html',
+					id: 'niceChinaWord'
+				});
+			});
+
+			buttonTagP['2'].addEventListener('tap', function() {
+				ca.newInterface({
+					url: 'niceWordOverseas.html',
+					id: 'niceWordOverseas'
+				});
+			});
+				buttonTagP['3'].addEventListener('tap', function() {
+				ca.newInterface({
+					url: 'chinaWordVoice.html',
+					id: 'chinaWordVoice'
+				});
+			});
+	
+
+			//			for (var i = 0; i < buttonTagP.length; i++) {
+			//				if (0 == i) { //心灵美句
+			//					url = 'heartsBeautifulWord.html';
+			//					urlId = 'heartsBeautifulWord';
+			//				} 
+			//				else if (1 == i) { //国产好词
+			//					url = 'niceChinaWord.html';
+			//					urlId = 'niceChinaWord';
+			//				} else if (2 == i) { //外词汉韵
+			//					url = 'niceWordOverseas.html';
+			//					urlId = 'niceWordOverseas';
+			//				} else if (3 == i) { //汉词美声
+			//					url = 'chinaWordVoice.html';
+			//					urlId = 'chinaWordVoice';
+			//				}
+			//				buttonTagP[i].addEventListener('tap', function() {
+			//					ca.newInterface({
+			//						url: url,
+			//						id: urlId
+			//					});
+			//				});
+			//			}
+		</script>
+	</body>
+
+</html>

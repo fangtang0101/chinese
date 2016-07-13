@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+	
+
+		<button id="classBtn" style="position: fixed; top: 50px;left: 50px; width: 100px;height: 50px; z-index: 100;">点我添加</button>
+
+		<!--<button id="classBtn1" style="position: fixed; top: 100px;left: 50px; width: 100px;height: 50px; z-index: 100;">点我添加</button>-->
+
+		<header class="mui-bar mui-bar-nav ">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left "></a>
+			<h1 class="mui-title ">心灵美句</h1>
+		</header>
+		<!--<div id="original" class="mui-control-content">
+			11
+		</div>-->
+		<!--<div class="classOut mui-control-content" id="synthesis">-->
+		<div class="classOut ">
+			<!--左侧第一块-->
+			<div class="class_box_left ">
+				<div class="class_box_left_cell_first ">
+					<span class=" class_box_left_cell class_box_left_cell_productionName">
+						<p>作品名称：︽ 锄禾 ︾</p>
+					</span>
+					<span class="class_box_left_cell class_box_left_cell_authorName">
+						<p>作者：李绅</p>
+					</span>
+
+					<span class="class_box_left_cell ">
+						<p>专业题词：xxxx</p>
+					</span>
+					<span class="class_box_left_cell ">
+						<p>简介：这组诗深刻地反映了中国封建时代农民的生存状态。第一首诗具体而形象地描绘了到处硕果累累的景象，突出了农民辛勤劳动获得丰收却两手空空、惨遭饿死的现实问题；第二首诗描绘了在烈日当空的正午农民田里劳作的景象，概括地表现了农民终年辛勤劳动的生活，最后以“谁知盘中餐，粒粒皆辛苦”这样近似蕴意深远的格言，表达了诗人对农民真挚的同情之心。组诗选取了比较典型的生活细节和人们熟知的事实，集中地刻画了当时社会的矛盾。全诗风格简朴厚重，语言通俗质朴，音节和谐明快，并运用了虚实结合与对比手法，增强了诗的表现力。这两首诗不仅在民间广泛流传，在文学史上亦有一定影响，近代以来更作为思想教材选入了小学教科书。</p>
+					</span>
+				</div>
+				<div class="class_box_left_cell_section ">
+					<span class=" class_box_left_cell class_box_left_cell_productionName">
+						<p>作品名称：︽ 锄禾 ︾</p>
+					</span>
+					<span class="class_box_left_cell class_box_left_cell_authorName">
+						<p>作者：李绅</p>
+					</span>
+
+					<span class="class_box_left_cell ">
+						<p>专业题词：xxxx</p>
+					</span>
+					<span class="class_box_left_cell ">
+						<p>简介：这组诗深刻地反映了中国封建时代农民的生存状态。第一首诗具体而形象地描绘了到处硕果累累的景象，突出了农民辛勤劳动获得丰收却两手空空、惨遭饿死的现实问题；第二首诗描绘了在烈日当空的正午农民田里劳作的景象，概括地表现了农民终年辛勤劳动的生活，最后以“谁知盘中餐，粒粒皆辛苦”这样近似蕴意深远的格言，表达了诗人对农民真挚的同情之心。组诗选取了比较典型的生活细节和人们熟知的事实，集中地刻画了当时社会的矛盾。全诗风格简朴厚重，语言通俗质朴，音节和谐明快，并运用了虚实结合与对比手法，增强了诗的表现力。这两首诗不仅在民间广泛流传，在文学史上亦有一定影响，近代以来更作为思想教材选入了小学教科书。</p>
+					</span>
+				</div>
+			</div>
+			<!--左侧第二块-->
+			<div class="class_box_left ">
+				<div class="class_box_left_cell_first ">
+					333
+				</div>
+				<div class="class_box_left_cell_section ">
+					444
+				</div>
+			</div>
+		</div>
+
+		<script src="js/mui.min.js "></script>
+		<script src="js/castapp.js "></script>
+
+		<script type="text/javascript ">
+			ca.init();
+
+			var objOut1 = ca.className('classOut');
+			objOut1['0'].innerHTML = '';
+
+			var width = document.documentElement.clientWidth;
+
+			var height = document.documentElement.clientHeight;
+			//第一次就一个
+			localStorage.setItem('num', 1);
+
+			var name = '锄禾';
+			var author = '李绅';
+			var third = 'xxx不知道写点什么鬼';
+			var introuce = '这组诗深刻地反映了中国封建时代农民的生存状态。第一首诗具体而形象地描绘了到处硕果累累的景象，突出了农民辛勤劳动获得丰收却两手空空、惨遭饿死的现实问题；第二首诗描绘了在烈日当空的正午农民田里劳作的景象，概括地表现了农民终年辛勤劳动的生活，最后以“谁知盘中餐，粒粒皆辛苦”这样近似蕴意深远的格言，表达了诗人对农民真挚的同情之心。组诗选取了比较典型的生活细节和人们熟知的事实，集中地刻画了当时社会的矛盾。全诗风格简朴厚重，语言通俗质朴，音节和谐明快，并运用了虚实结合与对比手法，增强了诗的表现力。这两首诗不仅在民间广泛流传，在文学史上亦有一定影响，近代以来更作为思想教材选入了小学教科书。';
+
+			//			updataUI();
+
+			function updataUI() {
+				var objOut = ca.className('classOut');
+				var num = localStorage.getItem('num');
+				if(num == 1) {
+					objOut['0'].style.width = width / 2 + 'px';
+				} else {
+					objOut['0'].style.width = (width / 2) * num + 'px';
+				}
+				var obj = ca.className('class_box_left');
+				//坑3 注意格式
+				for(var i = 0; i < obj.length; i++) {
+					obj[i].style.width = width / 2 + 'px';
+					obj[i].style.height = height + 'px';
+				}
+				var objLeftFirst = ca.className('class_box_left_cell_first');
+				for(var i = 0; i < obj.length; i++) {
+					objLeftFirst[i].style.height = height / 2 + 'px';
+				}
+				var objLeftsection = ca.className('class_box_left_cell_section');
+				for(var i = 0; i < obj.length; i++) {
+					objLeftsection[i].style.height = height / 2 + 'px';
+				}
+			}
+			//点击添加
+			var btn = ca.id('classBtn');
+			var temp = '	<div class="class_box_left ">' + '<div class="class_box_left_cell_first ">' + '<span class=" class_box_left_cell class_box_left_cell_productionName">' + '<p>' + name + '</p>' + '</span>' + '<span class="class_box_left_cell class_box_left_cell_authorName">' + '<p>' + author + '</p>' + '</span>' + '<span class="class_box_left_cell ">' + '<p>' + third + '</p>' + '</span>' + '<span class="class_box_left_cell ">' + '<p>' + introuce + '</p>' + '</span>' + '</div>' + '<div class="class_box_left_cell_section ">' + '<span class=" class_box_left_cell class_box_left_cell_productionName">' + '<p>作品名称：︽ 锄禾 ︾</p>' + '</span>' + '<span class="class_box_left_cell class_box_left_cell_authorName">' + '<p>作者：李绅</p>' + '</span>' + '<span class="class_box_left_cell ">' + '<p>专业题词：xxxx</p>' + '</span>' + '<span class="class_box_left_cell ">' + '<p>简介：这组诗深刻地反映了中国封建时代农民的生存状态。第一首诗具体而形象地描绘了到处硕果累累的景象，突出了农民辛勤劳动获得丰收却两手空空、惨遭饿死的现实问题；第二首诗描绘了在烈日当空的正午农民田里劳作的景象，概括地表现了农民终年辛勤劳动的生活，最后以“谁知盘中餐，粒粒皆辛苦”这样近似蕴意深远的格言，表达了诗人对农民真挚的同情之心。组诗选取了比较典型的生活细节和人们熟知的事实，集中地刻画了当时社会的矛盾。全诗风格简朴厚重，语言通俗质朴，音节和谐明快，并运用了虚实结合与对比手法，增强了诗的表现力。这两首诗不仅在民间广泛流传，在文学史上亦有一定影响，近代以来更作为思想教材选入了小学教科书。</p>' + '</span>' + '</div>';
+
+			btn.addEventListener('tap', function() {
+
+				//添加模板
+				var boxOut = ca.className('classOut');
+				boxOut['0'].innerHTML += temp;
+				var num = localStorage.getItem('num');
+				updataUI();
+				if(num < 1) {
+					localStorage.setItem('num', 1);
+				} else {
+					num++
+					localStorage.setItem('num', num);
+				}
+				updataUI();
+			});
+
+//button 2 的点击事件=============================（调试用的）
+			var objBtn = ca.id('classBtn1');
+			objBtn.addEventListener('tap', function() {
+				//1.先获取当前页面的对象 2.通过此对象 把 对应 页面的 a 删除
+
+				//								ca.getCurrentInterface(function(currentObject) {
+				//									currentObject.close('a');
+				//								});
+				alert('11');
+				mui.plusReady(function() {
+					alert('22');
+					var productdetails = plus.webview.getWebviewById("a");
+					if(productdetails) {
+						productdetails.close();
+					};
+				});
+				//								
+
+				//								castapp.createChildInterface({
+				//									url: 'b.html',
+				//									id: 'b',
+				//									styles: {
+				//										top: '44px',
+				//										bottom: '',
+				//										width: '',
+				//										height: '',
+				//									}
+				//								});
+
+			})
+		</script>
+
+	</body>
+
+</html>

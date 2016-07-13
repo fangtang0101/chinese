@@ -1,0 +1,55 @@
+{
+  "nonstop.html": {
+    "href": "nonstop.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "more.html": {
+    "href": "more.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/castapp.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "original.html": {
+    "href": "original.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "synthesis.html": {
+    "href": "synthesis.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/style.css",
+      "js/castapp.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/castapp.js"
+    ],
+    "refer": [
+      "nonstop.html",
+      "more.html",
+      "original.html",
+      "synthesis.html"
+    ],
+    "priority": 0
+  }
+}

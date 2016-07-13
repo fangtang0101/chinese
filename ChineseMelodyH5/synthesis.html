@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--第一部分==综合-->
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">综合</h1>
+		</header>
+		<!--目录-->
+		<div class="class-particulars">
+			<div class="class-particulars-someOne class-particulars-FIrst">
+				<span>
+				 	<p>心灵美句</p>
+				 </span>
+			</div>
+
+			<div class="class-particulars-someOne class-particulars-Second">
+				<span>
+				 	<p>国产好词</p>
+				 </span> </div>
+
+			<div class="class-particulars-someOne class-particulars-Thrid">
+				<span>
+				 	<p>外词汉韵</p>
+				 </span>
+			</div>
+			<div class="class-particulars-someOne class-particulars-Fourth">
+				<span>
+				 	<p>汉词美声</p>
+				 </span>
+			</div>
+		</div>
+		<!--坑 1 一定要先引入mui-js，最基本的依赖-->
+		<script src="js/mui.js"></script>
+		<script src="js/castapp.js"></script>
+		<script>
+			//()里面可填参数 true(状态栏文字颜色为黑色) 、false（状态栏白色文字）
+			ca.init();
+
+			function clickEvet() {
+				var obj = ca.className('class-particulars-someOne');
+				obj['0'].addEventListener('tap', function() {
+					//进入心灵句 注意格式
+					ca.newInterface({
+						url: 'heartsBeautifulWord.html',
+						id: 'heartsBeautifulWord'
+					});
+				});
+
+				obj['1'].addEventListener('tap', function() {
+					//进入国产好词
+					ca.newInterface({
+						url: 'niceChinaWord.html',
+						id: 'niceChinaWord'
+					});
+				});
+
+				obj['2'].addEventListener('tap', function() {
+					//进入外词汉韵
+					ca.newInterface({
+						url: 'niceWordOverseas.html',
+						id: 'niceWordOverseas'
+					});
+				});
+
+				obj['3'].addEventListener('tap', function() {
+					//进入汉词美声
+					ca.newInterface({
+						url: 'chinaWordVoice.html',
+						id: 'chinaWordVoice'
+					});
+				});
+			}
+			clickEvet();
+		</script>
+
+	</body>
+
+</html>

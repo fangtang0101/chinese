@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">外词汉韵</h1>
+		</header>
+		
+		<button id="btn" style="position: fixed;top: 50px;left: 50px;width: 100px;height: 50px;z-index: 100;">点击我添加</button>
+
+		<div class="nice_box_out">
+
+			<div class="nice_box_Left">
+
+				<div class="nice_box_productName">
+					<span>
+		作者名称：悯农
+		</span>
+					<span>
+		作者：李绅
+		</span>
+					<span>
+		专业题词：xxx不知道什么鬼
+		</span>
+					<span>
+		简介：这组诗深刻地反映了中国封建时代农民的生存状态。第一首诗具体而形象地描绘了到处硕果累累的景象，突出了农民辛勤劳动获得丰收却两手空空、惨遭饿死的现实问题；第二首诗描绘了在烈日当空的正午农民田里劳作的景象，概括地表现了农民终年辛勤劳动的生活，最后以“谁知盘中餐，粒粒皆辛苦”这样近似蕴意深远的格言，表达了诗人对农民真挚的同情之心。组诗选取了比较典型的生活细节和人们熟知的事实，集中地刻画了当时社会的矛盾。全诗风格简朴厚重，语言通俗质朴，音节和谐明快，并运用了虚实结合与对比手法，增强了诗的表现力。这两首诗不仅在民间广泛流传，在文学史上亦有一定影响，近代以来更作为思想教材选入了小学教科书。
+		</span>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/castapp.js"></script>
+		<script src="js/my_tmpl.js"></script>
+		<script type="text/javascript">
+			ca.init();
+			var classOut = ca.className('nice_box_out');
+			//添加点击事件
+			var objBtn = ca.id('btn');
+			objBtn.addEventListener('tap',function(){
+			var tep = nice_tmpl.itemTmpl();
+			classOut['0'].innerHTML += tep;
+			//坑 1.检查是否导入文件 2.检查 语法 = 号 什么的
+			});
+		</script>
+	</body>
+
+</html>
